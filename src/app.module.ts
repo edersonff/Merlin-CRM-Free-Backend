@@ -15,12 +15,13 @@ import { FilterType } from './filter-type/entities/filter-type.entity';
   imports: [
     TypeOrmModule.forRoot({
       type: 'postgres',
-      host: 'localhost',
+      host: 'ep-crimson-bonus-25963437.us-east-2.aws.neon.tech',
       port: 5432,
-      username: 'postgres',
-      password: 'root',
+      username: 'edersonff',
+      password: 'WB5GSpYd0QjA',
       entities: [User, Filter, FilterType],
-      database: 'crm',
+      database: 'CRM',
+      ssl: true,
       synchronize: true,
       logging: true,
     }),
